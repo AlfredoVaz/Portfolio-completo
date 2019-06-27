@@ -1,0 +1,22 @@
+#sectionBiography {
+    width: 100%;
+    padding: 2rem 0rem;
+    background-color: rgb(44, 44, 44);
+}
+
+#sectionBiography h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+#sectionBiography div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.biography{
+    color: white;
+}

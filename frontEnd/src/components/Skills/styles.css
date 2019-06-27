@@ -1,0 +1,40 @@
+#sectionSkills {
+    background-color: black;
+    padding: 3rem 0rem;
+}
+
+#sectionSkills h1 {
+    padding-top: 2%; 
+    text-align: center;
+    color: white;
+}
+
+#sectionSkills div {
+    display: flex;
+    justify-content: center;
+}
+
+#sectionSkills ul{
+    text-align: center;
+    margin: 4% 2%;
+    font-size: 1rem;
+    line-height: 40px;
+}
+
+@media (max-width: 768px){
+    #sectionSkills h1 {
+        padding-top: 2%; 
+        padding-bottom: 10%;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media (max-width: 441px){
+    #sectionSkills h1 {
+        padding-top: 2%;
+        padding-bottom: 10%; 
+        text-align: center;
+        color: white;
+    }
+}

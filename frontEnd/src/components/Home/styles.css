@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+section {
+    background-color: rgb(66, 66, 66);
+}
+
+section div #minhaFoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin-top: 15%;
+}
+
+#buttonCV {
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#buttonCV a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+#buttonCV a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#buttonCV:hover {
+    background-color: transparent;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+section ul h4{
+    margin-top: 5%;
+}
+
+@media (max-width: 768px){
+    #buttonCV {
+        background-color: white;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+
+    section ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30%;
+        margin-bottom: 35%;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 441px){
+    #buttonCV {
+        background-color: white;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+
+    section ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 65%;
+        margin-bottom: 65%;
+        background-color: transparent;
+        font-size: 20px;
+    }
+}

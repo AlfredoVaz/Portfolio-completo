@@ -1,0 +1,44 @@
+#sectionJobs {
+    width: 100%;
+    padding: 2rem 0rem;
+    background-color: black; 
+}
+
+#sectionJobs h1, h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#sectionJobs h5 {
+    padding-bottom: 2rem;
+}
+
+#sectionJobs div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sectionJobs div div {
+    background-color: rgb(44, 44, 44);
+}
+
+@media (max-width: 768px){
+    #sectionJobs h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+
+@media (max-width: 441px){
+    #sectionJobs h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+}

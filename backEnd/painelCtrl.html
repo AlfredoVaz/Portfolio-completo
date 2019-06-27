@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+form{
+    text-align: center;
+}
+
+#home div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blogsTextArea textarea, #idAbout textarea{
+    width: 200px;
+    height: 100px;
+}
+
+body h1{
+    text-align: center;
+}
+
+.form-control {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#skills{
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+#blogs{
+    margin-left: 200px;
+}
+
+#blogsTextArea textarea{
+    width: 250px;
+}
+
+#projetos {
+    margin-left: 320px;
+}
+
+#idAbout {
+    margin-left: 360px;
+}
+
+#imgfile1 , #imgfile2{
+    display: none;
+}
+
+#inputProjetos{
+    margin-left: 70px; 
+}
+
+</style>
+<body>
+    <h1>Painel de Controle</h1>
+    <form id="form">
+        <section id="home" class="container">
+            <h3>Interesses</h3>
+            <div id="interesses" class="column">
+                <input type="text" class="form-control" id="interesses1">
+                <input type="text" class="form-control" id="interesses2">   
+                <input type="text" class="form-control" id="interesses3">
+            </div>
+            <h3>Idiomas</h3>
+            <div id="idiomas">
+                <input type="text" class="form-control" id="idiomas1">
+                <input type="text" class="form-control" id="idiomas2">   
+            </div>
+            <h3>Formacao</h3>
+            <div id="formacao">
+                <input type="text" class="form-control" id="formacao1">
+                <input type="text" class="form-control" id="formacao2">   
+            </div>
+        </section>
+        <section  class="container">
+            <h3>Habilidades</h3>
+            <div id="skills">
+                <div id="divSkills" class="row">
+                    <input type="text" class="form-control" id="hab1">
+                    <input type="text" class="form-control" id="hab2">   
+                    <input type="text" class="form-control" id="hab3">
+                    <input type="text" class="form-control" id="hab4">
+                </div>
+                <div class="row">
+                    <input type="text" class="form-control" id="hab5">   
+                    <input type="text" class="form-control" id="hab6">
+                    <input type="text" class="form-control" id="hab7">
+                    <input type="text" class="form-control" id="hab8"> 
+                </div>
+                <div class="row">
+                    <input type="text" class="form-control" id="hab9">
+                    <input type="text" class="form-control" id="hab10">
+                    <input type="text" class="form-control" id="hab11">   
+                    <input type="text" class="form-control" id="hab12">
+                </div>
+                <div class="row">
+                    <input type="text" class="form-control" id="hab13">
+                    <input type="text" class="form-control" id="hab14">   
+                    <input type="text" class="form-control" id="hab15">
+                    <input type="text" class="form-control" id="hab16">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Blogs</h3>
+            <div id="blogs">
+                <div id="dviBlogs" class="row">
+                    <input type="text" class="form-control" id="fotoBlog1">
+                    <input type="text" class="form-control" id="fotoBlog2">
+                    <input type="text" class="form-control" id="fotoBlog3">
+                </div>
+                <div class="row">
+                    <input type="text" class="form-control" id="tituloBlog1">  
+                    <input type="text" class="form-control" id="tituloBlog2">   
+                    <input type="text" class="form-control" id="tituloBlog3">
+                </div>
+                <div id="blogsTextArea" class="row">
+                    <textarea type="text" class="form-control" id="descBlog1"></textarea>
+                    <textarea type="text" class="form-control" id="descBlog2"></textarea>
+                    <textarea type="text" class="form-control" id="descBlog3"></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Projetos</h3>
+            <div id="projetos" >
+                <div class="row">
+                    <div class="input-wrapper" id="inputProjetos">
+                        <label id="input-file1" for="imgfile1" class="btn" style="background-color:black;color:#fafafa;"> Selecione um arquivo </label> 
+                        <input type="file" id="imgfile1">
+                        <input type="hidden" name="image" id="image1">
+                        <label id="input-file2" for="imgfile2" class="btn" style="background-color:black;color:#fafafa;"> Selecione um arquivo </label> 
+                        <input type="file" id="imgfile2">
+                        <input type="hidden" id="image1">
+                    </div>
+                </div>
+                <div id="divProjetos" class="row">
+                    <input type="text" class="form-control" id="tituloProjeto1">   
+                    <input type="text" class="form-control" id="tituloProjeto2">   
+                </div>
+                <div class="row">
+                    <textarea type="text" class="form-control" id="descProjeto1"></textarea>
+                    <textarea type="text" class="form-control" id="descProjeto2"></textarea>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container">
+            <h3>Sobre mim</h3>
+            <div id="idAbout" class="row">
+                <textarea type="text" class="form-control" id="biografia"></textarea>
+                <textarea type="text" class="form-control" id="profissao"></textarea>  
+            </div>
+        </section>
+        <button id="submit" class="btn">Enviar</buttons>
+    </form>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script>
+    $(document).ready(function() {
+        axios.get("http://localhost:9999/api/curriculo/listar", {
+                crossDomain: true
+            })
+            .then(result => {
+                console.log(result);
+                result.data.map(json => {
+                    //Home
+                    $("#interesses1").val(json.interesses1);
+                    $("#interesses2").val(json.interesses2);
+                    $("#interesses3").val(json.interesses3);
+                    $("#idiomas1").val(json.idiomas1);
+                    $("#idiomas2").val(json.idiomas2);
+                    $("#formacao1").val(json.formacao1);
+                    $("#formacao2").val(json.formacao2);
+                    //Skills
+                    $("#hab1").val(json.hab1);
+                    $("#hab2").val(json.hab2);
+                    $("#hab3").val(json.hab3);
+                    $("#hab4").val(json.hab4);
+                    $("#hab5").val(json.hab5);
+                    $("#hab6").val(json.hab6);
+                    $("#hab7").val(json.hab7);
+                    $("#hab8").val(json.hab8);
+                    $("#hab9").val(json.hab9);
+                    $("#hab10").val(json.hab10);
+                    $("#hab11").val(json.hab11);
+                    $("#hab12").val(json.hab12);
+                    $("#hab13").val(json.hab13);
+                    $("#hab14").val(json.hab14);
+                    $("#hab15").val(json.hab15);
+                    $("#hab16").val(json.hab16);
+                    //Blogs
+                    $("#fotoBlog1").val(json.blogFoto1);
+                    $("#fotoBlog2").val(json.blogFoto2);
+                    $("#fotoBlog3").val(json.blogFoto3);
+                    $("#tituloBlog1").val(json.blogTitulo1);
+                    $("#tituloBlog2").val(json.blogTitulo2);
+                    $("#tituloBlog3").val(json.blogTitulo3);
+                    $("#descBlog1").val(json.blogDescricao1);
+                    $("#descBlog2").val(json.blogDescricao2);
+                    $("#descBlog3").val(json.blogDescricao3);
+                    //Projetos
+                    $("#fotoProjeto1").val(json.fotoProjeto1);
+                    $("#tituloProjeto1").val(json.nomeProjeto1);
+                    $("#descProjeto1").val(json.descricaoProjeto1);
+                    $("#fotoProjeto2").val(json.fotoProjeto2);
+                    $("#tituloProjeto2").val(json.nomeProjeto2);
+                    $("#descProjeto2").val(json.descricaoProjeto2);
+                    //about
+                    $("#biografia").val(json.biografia);
+                    $("#profissao").val(json.profissao);
+                });
+            });
+
+        $("#submit").click(function(){
+            axios.put("http://localhost:9999/api/curriculo/5d0fd505b03ec01f08bf989e/alterar", {
+                crossDomain: true,
+                "interesses1" : $("#interesses1").val(),
+                "interesses2" : $("#interesses2").val(),
+                "interesses3" : $("#interesses3").val(),
+                "hab1" : $("#hab1").val(),
+                "hab2" : $("#hab2").val(),
+                "hab3" : $("#hab3").val(),
+                "hab4" : $("#hab4").val(),
+                "hab5" : $("#hab5").val(),
+                "hab6" : $("#hab6").val(),
+                "hab7" : $("#hab7").val(),
+                "hab8" : $("#hab8").val(),
+                "hab9" : $("#hab9").val(),
+                "hab10" : $("#hab10").val(),
+                "hab11" : $("#hab11").val(),
+                "hab12" : $("#hab12").val(),
+                "hab13" : $("#hab13").val(),
+                "hab14" : $("#hab14").val(),
+                "hab15" : $("#hab15").val(),
+                "hab16" : $("#hab16").val(),
+                "blogFoto1" : $("#fotoBlog1").val(),
+                "blogFoto2" : $("#fotoBlog2").val(),
+                "blogFoto3" : $("#fotoBlog3").val(),
+                "blogTitulo1" : $("#tituloBlog1").val(),
+                "blogTitulo2" : $("#tituloBlog2").val(),
+                "blogTitulo3" : $("#tituloBlog3").val(),
+                "blogDescricao1" : $("#descBlog1").val(),
+                "blogDescricao2" : $("#descBlog2").val(),
+                "blogDescricao3" : $("#descBlog3").val(),
+                "fotoProjeto1" : $("#fotoProjeto1").val(),
+                "nomeProjeto1" : $("#tituloProjeto1").val(),
+                "descricaoProjeto1" : $("#descProjeto1").val(),
+                "fotoProjeto2" : $("#fotoProjeto2").val(),
+                "nomeProjeto2" : $("#tituloProjeto2").val(),
+                "descricaoProjeto2" : $("#descProjeto2").val()
+            })
+            .then(result => {
+                console.log(result)
+            });
+        });
+    });
+    </script>
+</html>

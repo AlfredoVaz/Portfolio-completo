@@ -1,0 +1,101 @@
+#sectionBlogs {
+    width: 100%;
+    padding: 5rem 0rem;
+}
+
+#sectionBlogs h1, h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#sectionBlogs h5 {
+    padding-bottom: 2rem;
+}
+
+#sectionBlogs div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.threeBlogs{
+    background-color:black;
+    width: 15rem;
+    padding: 0rem 0rem;
+}
+
+.threeBlogs div p,h6{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.threeBlogs div p {
+    padding: 2% 8%;
+}
+
+.threeBlogs div h6{
+    margin-top: 1rem;
+    font-size: 1.3rem;     
+}
+
+
+.imageBlogs{
+    width: 100%;
+    height: 10rem; 
+}
+
+.imgBlackWhite {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    transition: .3s;
+}
+
+.imgBlackWhite:hover {
+	-webkit-filter: none;	
+    filter: none;
+}
+
+.buttonBlogs {
+    background-color: white;
+    margin-bottom: 10%;
+}
+
+.buttonBlogs a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+.buttonBlogs a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.buttonBlogs:hover {
+    background-color: transparent;
+}
+
+
+@media (max-width: 768px){
+    #sectionBlogs h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+
+@media (max-width: 441px){
+    #sectionBlogs h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+}
+
+
+
